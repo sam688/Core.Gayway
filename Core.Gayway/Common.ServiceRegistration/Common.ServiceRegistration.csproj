@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>witcit.com</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ocelot.Provider.Consul" Version="16.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="consulconfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ConsulStart.bat">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

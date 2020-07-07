@@ -1,0 +1,9 @@
+{
+  "ConsulAddress": "http://127.0.0.1:8500", //consul 服务器地址
+  "ServiceName": "service.sample.https", //服务名称，被Consul发现的服务名，Core.Gayway中configuration.json配置的ServiceName对应这里
+  "Tags": "Sample Service,V1.0.0", //签标，可多个，用英文逗号分隔
+  "Weight": 1, //权重。本程序会自动将它尾加拼接到Consul的Tags中。
+  "Meta": "Name:SamLin,QQ:277728783,Home:www.witcit.com,Key:888888", //元信息，描述说明，名称:值对
+  "HealthCheck": "/Health", //健康检查的路径
+  "ServiceAddress": "https://localhost:44362/" //服务的地址
+}

@@ -3,3 +3,20 @@
 ################################################################################
 
 /.vs
+/Core.Gayway/.vs/Core.Gayway/v16
+/Core.Gayway/.vs/Core.Gayway
+/Core.Gayway/Common.ServiceRegistration/bin
+/Core.Gayway/Common.ServiceRegistration/obj
+/Core.Gayway/Core.Gayway/obj
+/Core.Gayway/Core.SampleClient/bin/Debug/netcoreapp3.1
+/Core.Gayway/Core.SampleClient/Logs
+/Core.Gayway/Core.SampleClient/obj
+/Core.Gayway/Core.SampleServices/bin
+/Core.Gayway/Core.SampleServices/obj
+*.user
+/Core.Gayway/Core.Gayway/bin/Debug/netcoreapp3.1
+/Core.Gayway/Core.SampleClient/publish
+/Core.Gayway/Core.SampleClient/bin/Release/netcoreapp3.1
+/Core.Gayway/Core.Gayway/bin/Release/netcoreapp3.1
+/Core.Gayway/Core.Identity/bin/Debug/netcoreapp3.1
+/Core.Gayway/Core.Identity/obj

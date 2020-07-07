@@ -1,0 +1,31 @@
+{
+  "globalconfiguration": {
+    "baseurl": "https://localhost:44347"
+  },
+  "reroutes": [
+    {
+      "servicename": "service.sample.https", //对应consul配置的servicename
+      "downstreampathtemplate": "/{url}",
+      "downstreamscheme": "https",
+      "upstreampathtemplate": "/{url}",
+      "upstreamhttpmethod": [ "get", "post", "put", "delete" ],
+      "loadbalanceroptions": {
+        "type": "roundrobin" //轮询 // "type":"leastconnection" //空闲，选最少连接数的服务器  // "type":"noloadbalance"  //不用负载均衡  
+      },
+      "useservicediscovery": true
+    },
+    {
+      "servicename": "service.sample.http", //对应consul配置的servicename
+      "downstreampathtemplate": "/{url}",
+      "downstreamscheme": "http", //方便支持iis中站点，它默认是http，但不比https安全，建议一般不用此方式
+      "upstreampathtemplate": "/http/{url}", //注意：多个reroute时，不要两个一样写法。不能重复
+      "upstreamhttpmethod": [ "get", "post", "put", "delete" ],
+      "loadbalanceroptions": {
+        "type": "roundrobin" //轮询 // "type":"leastconnection" //空闲，选最少连接数的服务器  // "type":"noloadbalance"  //不用负载均衡  
+      },
+      "useservicediscovery": true
+    }
+  ]
+}
+
+

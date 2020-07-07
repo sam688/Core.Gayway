@@ -1,0 +1,54 @@
+2020-06-29 16:55:55,163 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-29 16:55:55,493 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-29 16:55:56,204 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\AppGit\Core.Gayway\Core.Gayway\Core.SampleServices
+2020-06-29 16:56:47,914 [5] INFO  Core.SampleServices.Controllers.UserController - user
+2020-06-29 16:57:10,310 [5] INFO  Core.SampleServices.Controllers.UserController - user
+2020-06-29 16:59:13,866 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-29 16:59:13,928 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-29 16:59:13,937 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\AppGit\Core.Gayway\Core.Gayway\Core.SampleServices
+2020-06-29 16:59:20,903 [4] INFO  Core.SampleServices.Controllers.UserController - %LAUNCHER_ARGS%
+2020-06-29 17:20:11,818 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-29 17:20:11,859 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-29 17:20:11,863 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\AppGit\Core.Gayway\Core.Gayway\Core.SampleServices
+2020-06-29 17:20:31,744 [4] INFO  Core.SampleServices.Controllers.UserController - %LAUNCHER_ARGS%
+2020-06-29 17:21:46,056 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-29 17:21:46,522 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-29 17:21:46,549 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\AppGit\Core.Gayway\Core.Gayway\Core.SampleServices
+2020-06-29 17:45:51,322 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-29 17:45:51,358 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-29 17:45:51,362 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\AppGit\Core.Gayway\Core.Gayway\Core.SampleServices
+2020-06-29 17:46:28,631 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-29 17:46:28,701 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-29 17:46:28,701 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\AppGit\Core.Gayway\Core.Gayway\Core.SampleServices
+2020-06-29 17:50:30,736 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://127.0.0.1:44362
+2020-06-29 17:50:30,748 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-29 17:50:30,748 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-29 17:50:30,748 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\AppGit\Core.Gayway\Core.Gayway\Core.SampleServices
+2020-06-29 17:54:53,882 [25] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 17:54:56,204 [13] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 17:54:57,113 [25] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 17:58:54,129 [36] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 17:59:01,659 [25] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 17:59:04,743 [26] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 17:59:38,882 [50] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 18:01:55,081 [36] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 18:02:02,110 [36] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 18:02:05,208 [28] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 18:05:17,273 [58] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 18:05:23,494 [28] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 18:05:28,191 [36] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 18:05:34,310 [28] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 18:15:05,878 [28] INFO  Core.SampleServices.Controllers.UserController - --urls=https://127.0.0.1:44362
+2020-06-29 18:19:55,899 [2] INFO  Microsoft.Hosting.Lifetime - Application is shutting down...
+2020-06-29 19:55:49,460 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-29 19:55:49,528 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-29 19:55:49,534 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\AppGit\Core.Gayway\Core.Gayway\Core.SampleServices
+2020-06-29 19:57:09,189 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-29 19:57:09,583 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-29 19:57:09,592 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\AppGit\Core.Gayway\Core.Gayway\Core.SampleServices
+2020-06-29 23:06:37,935 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-29 23:06:38,001 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-29 23:06:38,041 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\AppGit\Core.Gayway\Core.Gayway\Core.SampleServices
+2020-06-29 23:23:01,141 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-06-29 23:23:01,186 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-06-29 23:23:01,189 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\AppGit\Core.Gayway\Core.Gayway\Core.SampleServices

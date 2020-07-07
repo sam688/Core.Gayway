@@ -1,0 +1,58 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44347",//网关,访问入口的基本url
+    "ReRouteIsCaseSensitive": false, //重置路径是否区分大小写
+    "ServiceDiscoveryProvider": {
+      "Host": "localhost", //Ocelot的Host
+      "Port": 8500, //Ocelot的端口
+      "Type": "Consul" //由Consul提供服务发现
+    },
+    "RateLimitOptions": {
+      "DisableRateLimitHeaders": false, // Http头  X-Rate-Limit 和 Retry-After 是否禁用
+      "QuotaExceededMessage": "Too many requests,please wait.", // 当请求过载被截断时返回的消息
+      "HttpStatusCode": 999, // 当请求过载被截断时返回的http status
+      "ClientIdHeader": "core.client.https" // 用来识别客户端的请求头，默认是 ClientId
+    }
+  },
+  "ReRoutes": [
+    {
+      "ServiceName": "service.sample.https", //对应consul配置的ServiceName
+      "DownstreamPathTemplate": "/{url}", //服务的Path
+      "DownstreamScheme": "https", //服务的Scheme
+      "UpstreamPathTemplate": "/{url}", //服务的Scheme
+      "UpstreamHttpMethod": [ "Get", "Post", "PUT", "DELETE" ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin" //轮询 // "Type":"LeastConnection" //空闲，选最少连接数的服务器  // "Type":"NoLoadBalance"  //不用负载均衡  
+      },
+      "UseServiceDiscovery": true,
+      "RateLimitOptions": {
+        "ClientWhitelist": [ "127.0.0.1" ], // 白名单
+        "EnableRateLimiting": true, // 是否启用限流
+        "Period": "1s", // 统计时间段：1s, 5m, 1h, 1d
+        "PeriodTimespan": 5, // 多少秒之后客户端可以重试
+        "Limit": 5 // 在统计时间段内允许的最大请求数量
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3, // 允许多少个异常请求
+        "DurationOfBreak": 10000, // 熔断的时间，单位为毫秒
+        "TimeoutValue": 30000 // 如果下游请求的处理时间超过多少则视如该请求超时
+      },
+      "FileCacheOptions": { // cache response data - ttl: 10s   10秒内相同url请求直接返回缓存数据
+        "TtlSeconds": 10, //单位为秒
+        "Region": "" //域，范围
+      }
+    },
+    {
+      "ServiceName": "service.sample.http", //对应consul配置的ServiceName
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "http", //方便支持iis中站点，它默认是http，但不比https安全，建议一般不用此方式
+      "UpstreamPathTemplate": "/http/{url}", //注意：多个ReRoute时，不要两个一样写法。不能重复
+      "UpstreamHttpMethod": [ "Get", "Post", "PUT", "DELETE" ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin" //轮询 // "Type":"LeastConnection" //空闲，选最少连接数的服务器  // "Type":"NoLoadBalance"  //不用负载均衡  
+      },
+      "UseServiceDiscovery": true
+    }
+  ]
+}
+

@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Consul服务与负载均衡测试";
+}
+
+  <div class="text-left">
+    <h4>@ViewData["Title"]</h4>
+    <hr />
+    <h4>ServiceUrl:</h4>
+    <p> @base.ViewBag.ServiceUrl</p>
+    <h4>HttpGet Content:</h4>
+    <p>@base.ViewBag.Content</p>
+
+    <p>您可以将Core.SampleServices项目发布到多处，按不同端口启动，以模拟不同服务器。刷新本页，可以看到负载均衡切换效果</p>
+    <hr />
+    <p>我们的技术服务 <a href="https://www.witcit.com/" target="_blank">了解更多</a></p>
+  </div>
